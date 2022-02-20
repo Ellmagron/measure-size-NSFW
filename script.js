@@ -53,7 +53,7 @@ function analisar(){
             img.setAttribute('src','img/ass-huge.png')
       }
     res.style.textAlign = 'center'
-    res.innerHTML = `Tamanho: <strong>${msg}</strong> Link do ${link}` 
+    res.innerHTML = `Tamanho: <strong>${msg}</strong> - Link do ${link}` 
     res.appendChild(img)
     }
 }
