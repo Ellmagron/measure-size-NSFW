@@ -1,6 +1,10 @@
 body{
     background: rgb(50, 50, 238);
     font: normal 15pt Arial;
+    background-image: url('img/fate.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 
 }
 header{
@@ -21,8 +25,11 @@ section{
 }
 
 footer{
-    color: white;
+    color: rgb(12, 8, 230);
     text-align: center;
     font-style: italic;
 
+}
+a#pe{
+    color: yellow;
 }
