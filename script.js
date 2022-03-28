@@ -4,7 +4,7 @@ function analisar(){
     
 
     if(size.value.length == 0){
-        alert('Digite uma meida!!')
+        alert('Digite uma medida!!')
     }else{
       var service = document.getElementsByName('fan')
       var msg = ''
