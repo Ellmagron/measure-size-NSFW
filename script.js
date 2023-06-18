@@ -1,13 +1,13 @@
-const btn = document.querySelector(".btn_service");
-const size = document.querySelector("input#medida");
-const res = document.querySelector("div#res");
-const img = document.createElement("img");
+const btn = document.querySelector('.btn_service');
+const size = document.querySelector('input#medida');
+const res = document.querySelector('div#res');
+const img = document.createElement('img');
 
 const radioButtons = document.querySelectorAll('input[name="fan"]');
-let valorRadio = "";
+let valorRadio = '';
 
 radioButtons.forEach(function (radioButton) {
-  radioButton.addEventListener("change", function () {
+  radioButton.addEventListener('change', function () {
     valorRadio = this.value;
   });
 });
@@ -18,13 +18,13 @@ const imgService = function (str, img, valorRadio) {
 };
 
 //Adicionando evento de click no botão e capturando o input feito pelo usuario
-btn.addEventListener("click", function () {
+btn.addEventListener('click', function () {
   if (size.value.length == 0) {
-    alert("Digite uma medida!!");
+    alert('Digite uma medida!!');
   } else {
     imgService(size.value, img, valorRadio); //Construinfo
   }
-  res.style.textAlign = "center";
+  res.style.textAlign = 'center';
   res.innerHTML = `Tamanho: <strong>${size.value}</strong> - Link do`;
   res.appendChild(img);
 });
